@@ -2,4 +2,9 @@
 /.config/nvim/plugin
 /.config/mpd/state
 /.config/mpd/database
+
 /.config/ncmpcpp/error.log
+
+/.config/containers/podman
+/.config/containers/podman-connections.json
+/.config/containers/podman-connections.json.lock
