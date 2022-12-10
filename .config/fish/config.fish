@@ -1,0 +1,18 @@
+if test -z "$TMUX"
+    set PATH $HOME/.local/bin $PATH
+end
+
+set SHELL (which fish)
+
+if status is-interactive
+    set fish_greeting        ""
+    set fish_escape_delay_ms 300
+    set fish_color_command   blue
+
+    set EDITOR nvim
+    set VISUAL nvim
+
+    bind ctrl-w        backward-kill-bigword
+    bind escape,ctrl-h backward-kill-word
+    bind escape,ctrl-b backward-bigword
+end
