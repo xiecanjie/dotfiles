@@ -146,20 +146,20 @@ require("lazy").setup({
       end,
     },
 
-    --{
-    --  "nvim-treesitter/nvim-treesitter",
-    --  lazy = false,
-    --  init = function()
-    --    vim.api.nvim_create_autocmd("FileType", {
-    --      pattern = {
-    --        "markdown",
-    --        "json", "yaml",
-    --        "go", "javascript", "typescript",
-    --      },
-    --      callback = function() vim.treesitter.start() end,
-    --    })
-    --  end,
-    --},
+    {
+      "nvim-treesitter/nvim-treesitter",
+      lazy = false,
+      init = function()
+        vim.api.nvim_create_autocmd("FileType", {
+          pattern = {
+            "markdown",
+            "json", "yaml",
+            "go", "javascript", "typescript",
+          },
+          callback = function() vim.treesitter.start() end,
+        })
+      end,
+    },
 
     {
       "hrsh7th/nvim-cmp",
